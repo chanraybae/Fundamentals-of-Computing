@@ -1,0 +1,10 @@
+"Madam, in Eden, I'm Adam" is a palindromic permutation
+"No lemon, no melon!" is a palindromic permutation
+"ettstes" is a palindromic permutation
+"yakak" is a palindromic permutation
+"deified" is a palindromic permutation
+"uppalapati" is not a palindromic permutation
+"lakdawala" is not a palindromic permutation
+"morrison" is not a palindromic permutation
+"fighting irish" is not a palindromic permutation
+"pstuuuoootsp" is not a palindromic permutation

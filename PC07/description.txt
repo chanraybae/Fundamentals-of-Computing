@@ -1,0 +1,45 @@
+Name: Chanwoo Ray Bae
+Email: cbae@nd.edu
+Date Created: 11/10/2021
+File Contents: contains the excruciating explanation of the project and how
+it was created and how it runs
+Here it is :D
+
+In my code, I used a hash table (thus std::unordered_map). For palindromes,
+you must have an even number of each type of character, except for one, which
+may have an odd number, but only one. Thus, I chose this 
+specific data structure of a hash table because it was easier to keep count 
+of the letter counts by using the characters as a key, incrementing their
+counts respective to the key every time that the character was found within
+the string of interest. At the end, I determined the number of odd numbers
+by looping through the keys through an algorithm I was inspired by online -
+credit was given in the code with the link. It is not too similar, but I felt 
+like I should give it credit because of its inspiration. Hash tables have a 
+time complexity of O(1) of lookup on average, and its worst case scenario is
+O(n), so it meets the requirements of this project.
+
+The is_permutation solves the problem by creating a hash map called countChars
+and I take each letter of the string and validate it to get rid of any 
+punctuation and white space, as noted in the instructions. Additionally, I
+would make all letters lowercase, as palindromes work, regardless of 
+capitalization, so for the algorithm, the same type of letter was all that
+was needed - i.e. two as one identity/key in the hash table. Then, I would
+increase the key's respective value to eventually compute the total number
+of times it would pop up, only allowing for one odd count of a character. 
+Thus, I would loop through the keys to check the count of odd letters, and 
+if there were two or more odds, the is_permutation function would return false.
+Therefore, if 1 or lower odd counts existed, then the function would be true,
+resulting in a palindrome. This result would be stored in a boolean variable
+in main and put into the function to print out the text file for the final
+output as "output.txt". The lookup would have a worse-case scenario of O(n), 
+which matches the prompt. And the individual lookups are just O(1), based on
+the average lookup time for a hash table. Since we want to analyze the Big-O
+worst-case scenario for the function, we can determine the time complexity
+to go through each string and also iterating through the map to count the 
+total number of odd counts in all the keys. Therefore, we get a time
+complexity of O(2 * n), which falls into the level of O(n).  
+This, of course, comes from the Big-O notation that is: 
+for a function g(n), we define O(g(n)) as the asymptotic upper bound of the set
+ of functions: O(g(n))= 
+{f(n): there exist positive constants c and n0 such that 0 <= f(n) <= c*g(n) 
+for all n >= n0}.
